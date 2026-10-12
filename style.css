@@ -1,3 +1,4 @@
+
 /* CONFIGURACIÓN GENERAL */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -82,32 +83,12 @@ a:focus-visible { outline: 3px solid #7251ae; outline-offset: 3px; }
 @media (max-width: 768px) {
   .header { flex-direction: column; padding: 15px 20px; }
   .header__nav { justify-content: center; gap: 12px 18px; }
-  .inicio { flex-direction: column; padding: 45px 20px; }
-  .inicio__titulo { font-size: 34px; }
+  .header__link { font-size: 13px; }
+  .inicio { flex-direction: column; gap: 25px; padding: 45px 20px; }
+  .inicio__titulo { font-size: 36px; }
   .inicio__imagen { width: 100%; height: 250px; }
-  .seccion { padding: 50px 20px; }
+  .seccion { padding: 50px 5%; }
   .seccion__titulo { font-size: 30px; }
-  .menu__productos { grid-template-columns: 1fr; max-width: 360px; }
+  .menu__productos { grid-template-columns: 1fr; gap: 16px; max-width: 360px; }
   .reposteria__contenido { grid-template-columns: 1fr; max-width: 360px; }
-}
-.header__link {
-    font-size: 13px;
-  }
-
-  .inicio {
-    gap: 25px;
-  }
-
-  .inicio__titulo {
-    font-size: 36px;
-  }
-
-  .seccion {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  .menu__productos {
-    gap: 16px;
-  }
 }
