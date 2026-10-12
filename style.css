@@ -89,7 +89,7 @@ a:focus-visible { outline: 3px solid #7251ae; outline-offset: 3px; }
 .footer__texto { font-size: 13px; margin: 5px 0; }
 .footer__copyright { color: #d8c9e3; font-size: 12px; }
 
-/* ADAPTACIÓN PARA TABLETAS Y CELULARES */
+/* ADAPTACIÓN */
 @media (max-width: 768px) {
   .header { flex-direction: column; padding: 15px 20px; }
   .header__nav { justify-content: center; gap: 12px 18px; }
