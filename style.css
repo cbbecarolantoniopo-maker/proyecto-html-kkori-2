@@ -119,3 +119,12 @@ a:focus-visible { outline: 3px solid #7251ae; outline-offset: 3px; }
     height: 250px;
   }
 }
+
+.nosotros__imagen {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  margin: 25px auto;
+  border-radius: 12px;
+}
