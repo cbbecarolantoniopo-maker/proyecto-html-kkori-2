@@ -1,0 +1,92 @@
+/* CONFIGURACIÓN GENERAL */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; color: #4b3f52; background: #faf7fc; line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+
+/* COMPONENTE: BOTÓN */
+.boton { display: inline-block; background: #8e78a3; color: white; padding: 11px 22px; border-radius: 24px; font-size: 14px; }
+.boton:hover { background: #675578; }
+a:focus-visible { outline: 3px solid #7251ae; outline-offset: 3px; }
+
+/* COMPONENTE: TÍTULOS DE SECCIÓN */
+.seccion { padding: 60px 8%; text-align: center; scroll-margin-top: 20px; }
+.seccion__titulo { font-family: Georgia, serif; font-weight: normal; font-size: 34px; margin-bottom: 10px; }
+.seccion__descripcion { color: #756a7a; margin-bottom: 28px; }
+
+/* ENCABEZADO */
+.header { padding: 12px 8%; background: #faf7fc; border-bottom: 1px solid #e7ddeb; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.header__logo { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: bold; letter-spacing: 3px; }
+.header__imagen { width: 54px; height: 54px; object-fit: contain; border-radius: 50%; }
+.header__nav { display: flex; flex-wrap: wrap; gap: 18px; }
+.header__link { font-size: 14px; }
+.header__link:hover { color: #8e78a3; }
+
+/* INICIO: FLEXBOX */
+.inicio { max-width: 1200px; margin: auto; padding: 65px 8%; display: flex; align-items: center; gap: 45px; }
+.inicio__contenido { flex: 1; }
+.inicio__categoria { color: #8e78a3; font-size: 12px; font-weight: bold; letter-spacing: 2px; margin-bottom: 14px; }
+.inicio__titulo { font: normal 42px/1.2 Georgia, serif; margin-bottom: 18px; }
+.inicio__descripcion { color: #756a7a; margin-bottom: 24px; }
+.inicio__imagen { width: 43%; height: 290px; object-fit: cover; border-radius: 14px; }
+
+/* MENÚ: GRID */
+.menu { background: #fff; }
+.menu__categorias { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+.menu__categoria { border: 1px solid #d8c9e3; background: #f5effa; padding: 8px 18px; border-radius: 20px; font-size: 14px; }
+.menu__categoria:hover { background: #e8d9f3; }
+.menu__subtitulo { font-size: 20px; margin-bottom: 20px; }
+.menu__productos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; max-width: 1000px; margin: auto; }
+.menu__nota { color: #756a7a; font-size: 12px; margin-top: 20px; }
+
+/* COMPONENTE REUTILIZABLE: TARJETA DE PRODUCTO */
+.producto { background: #faf7fc; border: 1px solid #e7ddeb; border-radius: 12px; overflow: hidden; text-align: center; }
+.producto__imagen { width: 100%; height: 190px; object-fit: cover; }
+.producto__contenido { padding: 18px; }
+.producto__titulo { font-size: 18px; margin-bottom: 6px; }
+.producto__descripcion { font-size: 14px; color: #756a7a; margin-bottom: 10px; }
+.producto__precio { font-size: 14px; color: #7d6197; }
+
+/* REPOSTERÍA: GRID */
+.reposteria { background: #f6effa; }
+.reposteria__contenido { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 28px; max-width: 720px; margin: auto; }
+.reposteria__personalizada { padding: 25px; background: #fff; border-radius: 12px; }
+.reposteria__titulo { font-size: 22px; margin-bottom: 12px; }
+.reposteria__texto { color: #756a7a; margin-bottom: 20px; }
+
+/* NOSOTROS */
+.nosotros { background: #faf7fc; }
+.nosotros__texto { max-width: 650px; margin: auto; color: #756a7a; }
+
+/* EXPERIENCIA */
+.experiencia { background: #fff; }
+.experiencia__video { max-width: 700px; margin: 0 auto 30px; }
+.experiencia__video video { display: block; width: 100%; max-height: 390px; border-radius: 12px; background: #e7ddeb; }
+.experiencia__audio { max-width: 450px; margin: auto; }
+.experiencia__subtitulo { margin-bottom: 10px; }
+.experiencia__audio audio { width: 100%; }
+
+/* CONTACTO */
+.contacto { background: #f1eaf5; }
+.contacto__redes { display: flex; flex-direction: column; align-items: center; gap: 15px; }
+.contacto__aviso { color: #756a7a; font-size: 13px; max-width: 450px; }
+
+/* PIE DE PÁGINA */
+.footer { background: #4b3f52; color: white; padding: 30px; text-align: center; }
+.footer__logo { font-size: 20px; letter-spacing: 3px; }
+.footer__texto { font-size: 13px; margin: 5px 0; }
+.footer__copyright { color: #d8c9e3; font-size: 12px; }
+
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 768px) {
+  .header { flex-direction: column; padding: 15px 20px; }
+  .header__nav { justify-content: center; gap: 12px 18px; }
+  .inicio { flex-direction: column; padding: 45px 20px; }
+  .inicio__titulo { font-size: 34px; }
+  .inicio__imagen { width: 100%; height: 250px; }
+  .seccion { padding: 50px 20px; }
+  .seccion__titulo { font-size: 30px; }
+  .menu__productos { grid-template-columns: 1fr; max-width: 360px; }
+  .reposteria__contenido { grid-template-columns: 1fr; max-width: 360px; }
+}
