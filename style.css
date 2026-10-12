@@ -90,3 +90,24 @@ a:focus-visible { outline: 3px solid #7251ae; outline-offset: 3px; }
   .menu__productos { grid-template-columns: 1fr; max-width: 360px; }
   .reposteria__contenido { grid-template-columns: 1fr; max-width: 360px; }
 }
+.header__link {
+    font-size: 13px;
+  }
+
+  .inicio {
+    gap: 25px;
+  }
+
+  .inicio__titulo {
+    font-size: 36px;
+  }
+
+  .seccion {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .menu__productos {
+    gap: 16px;
+  }
+}
