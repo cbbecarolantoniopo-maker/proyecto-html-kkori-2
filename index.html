@@ -1,18 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KKORI | Korean Bakery & Specialty Coffee</title>
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- ENCABEZADO -->
   <header class="header" id="arriba">
     <a class="header__logo" href="#inicio" aria-label="KKORI, ir al inicio">
-<img class="header__imagen" src="logo.jpg" alt="Logo de KKORI, gatito chef">
+      <img class="header__imagen" src="img/logo.png" alt="Logo de KKORI, gatito chef">
       <span>KKORI</span>
     </a>
+
     <nav class="header__nav" aria-label="Navegación principal">
       <a class="header__link" href="#inicio">Inicio</a>
       <a class="header__link" href="#menu">Menú</a>
@@ -24,6 +27,7 @@
   </header>
 
   <main>
+
     <!-- INICIO -->
     <section class="inicio" id="inicio">
       <div class="inicio__contenido">
@@ -32,103 +36,107 @@
         <p class="inicio__descripcion">Café, matcha, bebidas y repostería inspirada en Asia, preparados con cariño.</p>
         <a class="boton" href="#menu">Ver menú</a>
       </div>
-      <img class="inicio__imagen" src="img/local.jpg" alt="Espacio de la cafetería KKORI">
+
+      <img class="inicio__imagen" src="img/bebidas-kkori.jpg" alt="Bebidas de KKORI, matcha y ube">
     </section>
 
-    <!-- MENÚ: COMPONENTES DE PRODUCTOS REUTILIZABLES -->
+    <!-- MENÚ -->
     <section class="menu seccion" id="menu">
       <h2 class="seccion__titulo">Nuestro menú</h2>
       <p class="seccion__descripcion">Descubre algunas de nuestras bebidas favoritas.</p>
+
       <div class="menu__categorias" aria-label="Categorías del menú">
         <a class="menu__categoria" href="#bebidas">Bebidas</a>
         <a class="menu__categoria" href="#cafe">Café</a>
         <a class="menu__categoria" href="#reposteria">Repostería</a>
       </div>
+
       <h3 class="menu__subtitulo" id="bebidas">Bebidas especiales</h3>
+
       <div class="menu__productos">
         <article class="producto">
-          <img class="producto__imagen" src="img/producto1.jpg" alt="Matcha Latte">
+          <img class="producto__imagen" src="img/ube-matcha.jpg" alt="Bebida Ube Matcha">
           <div class="producto__contenido">
-            <h4 class="producto__titulo">Matcha Latte</h4>
-            <p class="producto__descripcion">Bebida cremosa preparada con matcha y leche.</p>
-            <strong class="producto__precio">Bs. 28*</strong>
-          </div>
-        </article>
-        <article class="producto">
-          <img class="producto__imagen" src="img/ube.jpg" alt="Bebida de ube">
-          <div class="producto__contenido">
-            <h4 class="producto__titulo">Ube Latte</h4>
-            <p class="producto__descripcion">Bebida suave inspirada en el ube, de color morado.</p>
+            <h4 class="producto__titulo">Ube Matcha</h4>
+            <p class="producto__descripcion">Una combinación de ube y matcha para disfrutar dos sabores en una bebida.</p>
             <span class="producto__precio">Consultar precio</span>
           </div>
         </article>
+
+        <article class="producto">
+          <img class="producto__imagen" src="img/ube-matcha-coco.jpg" alt="Bebidas Ube y Matcha Coco">
+          <div class="producto__contenido">
+            <h4 class="producto__titulo">Nube Matcha Coco</h4>
+            <p class="producto__descripcion">Una bebida cremosa de matcha y coco, inspirada en la especialidad de KKORI.</p>
+            <span class="producto__precio">Consultar precio</span>
+          </div>
+        </article>
+
         <article class="producto" id="cafe">
-          <img class="producto__imagen" src="img/cafe.jpg" alt="Café de especialidad">
+          <img class="producto__imagen" src="img/café-kkori.jpg" alt="Café con arte latte de KKORI">
           <div class="producto__contenido">
             <h4 class="producto__titulo">Specialty Coffee</h4>
-            <p class="producto__descripcion">Café de especialidad preparado con cuidado.</p>
-            <strong class="producto__precio">Bs. 22*</strong>
+            <p class="producto__descripcion">Café preparado con cuidado para disfrutar cada momento.</p>
+            <span class="producto__precio">Consultar precio</span>
           </div>
         </article>
       </div>
-      <p class="menu__nota">*Precios de ejemplo del proyecto; confirmar con KKORI antes de publicar.</p>
+    </section>
+
+    <!-- FRASE DE KKORI -->
+    <section class="nosotros seccion" id="nosotros">
+      <h2 class="seccion__titulo">Nuestra esencia</h2>
+      <img class="inicio__imagen" src="img/frase-kkori.jpg" alt="KKORI, punto de encuentro entre la cultura madrileña y las cafeterías coreanas" style="width:100%; max-width:650px; height:auto; margin:25px auto;">
+
+      <p class="nosotros__texto">KKORI nace con el propósito de ser más que una simple cafetería: un refugio acogedor para todos.</p>
     </section>
 
     <!-- REPOSTERÍA -->
     <section class="reposteria seccion" id="reposteria">
       <h2 class="seccion__titulo">Repostería</h2>
-      <p class="seccion__descripcion">Postres y tortas para disfrutar o celebrar un momento especial.</p>
+      <p class="seccion__descripcion">Descubre los sabores y las propuestas dulces de KKORI.</p>
+
       <div class="reposteria__contenido">
         <article class="producto">
-          <img class="producto__imagen" src="img/producto2.jpg" alt="Mini Cake">
+          <img class="producto__imagen" src="img/ube-matcha-coco.jpg" alt="Bebida cremosa de ube y matcha">
           <div class="producto__contenido">
-            <h3 class="producto__titulo">Mini Cake</h3>
-            <p class="producto__descripcion">Una torta pequeña y delicada, ideal para compartir.</p>
-            <strong class="producto__precio">Bs. 45*</strong>
+            <h3 class="producto__titulo">Especialidades de KKORI</h3>
+            <p class="producto__descripcion">Propuestas inspiradas en sabores asiáticos para acompañar tus momentos especiales.</p>
+            <span class="producto__precio">Consultar opciones disponibles</span>
           </div>
         </article>
+
         <div class="reposteria__personalizada">
-          <h3 class="reposteria__titulo">Tortas personalizadas</h3>
-          <p class="reposteria__texto">¿Tienes una celebración? Consulta por los diseños, tamaños y opciones disponibles.</p>
-          <a class="boton" href="#contacto">Consultar pedido</a>
+          <h3 class="reposteria__titulo">Un momento para disfrutar</h3>
+          <p class="reposteria__texto">Descubre nuestras bebidas y conoce las novedades de KKORI en nuestras redes sociales.</p>
+          <a class="boton" href="#contacto">Conócenos</a>
         </div>
       </div>
-    </section>
-
-    <!-- NOSOTROS -->
-    <section class="nosotros seccion" id="nosotros">
-      <h2 class="seccion__titulo">Sobre KKORI</h2>
-      <p class="nosotros__texto">KKORI es un espacio inspirado en la cultura asiática, donde puedes disfrutar de café, bebidas y repostería en un ambiente acogedor y especial.</p>
     </section>
 
     <!-- EXPERIENCIA -->
     <section class="experiencia seccion" id="experiencia">
       <h2 class="seccion__titulo">Vive la experiencia KKORI</h2>
-      <p class="seccion__descripcion">Conoce un poco más de nuestro espacio y nuestra esencia.</p>
-      <div class="experiencia__video">
-        <video controls preload="metadata">
-          <source src="video.mp4" type="video/mp4">
-          Tu navegador no puede reproducir este video.
-        </video>
-      </div>
-      <div class="experiencia__audio">
-        <h3 class="experiencia__subtitulo">Escucha KKORI</h3>
-        <audio controls preload="none">
-          <source src="audio.mp3" type="audio/mpeg">
-          Tu navegador no puede reproducir este audio.
-        </audio>
+      <p class="seccion__descripcion">Sabor coreano, trato cercano.</p>
+
+      <div class="experiencia__galeria">
+        <img class="producto__imagen" src="img/bebidas-kkori.jpg" alt="Bebidas de matcha y ube de KKORI">
+        <img class="producto__imagen" src="img/ube-matcha.jpg" alt="Especialidad Ube Matcha">
+        <img class="producto__imagen" src="img/café-kkori.jpg" alt="Café con arte latte">
       </div>
     </section>
 
     <!-- CONTACTO -->
     <section class="contacto seccion" id="contacto">
       <h2 class="seccion__titulo">Encuéntranos</h2>
-      <p class="seccion__descripcion">Conoce nuestras novedades o escríbenos para consultar tu pedido.</p>
+      <p class="seccion__descripcion">Conoce nuestras novedades y descubre más de KKORI.</p>
+
       <div class="contacto__redes">
         <a class="boton" href="https://www.instagram.com/kkori.cake.coffee/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <p class="contacto__aviso">Para pedidos por WhatsApp, añade aquí el enlace oficial de KKORI cuando lo tengas confirmado.</p>
+        <p class="contacto__aviso">Síguenos para conocer nuestras bebidas, especialidades y novedades.</p>
       </div>
     </section>
+
   </main>
 
   <!-- PIE DE PÁGINA -->
@@ -137,5 +145,6 @@
     <p class="footer__texto">Korean Bakery & Specialty Coffee</p>
     <small class="footer__copyright">© 2026 KKORI · Proyecto académico</small>
   </footer>
+
 </body>
 </html>
